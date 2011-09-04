@@ -1,0 +1,85 @@
+.container {
+	width: 710px;
+}
+
+body {
+	background: #778899;
+}
+
+header{
+	padding-top: 20px;
+}
+header{
+	padding: 1em;
+	background: #778899;
+}
+
+section {
+	magin-top:1em;
+	font-size: 120%;
+	padding: 20px;
+	background: #838B8B;
+}
+
+
+/* Links */
+a {
+	color: #FF7F24;
+	text-decoration: none;	
+}
+a:hover{
+	color: #069;
+	text-decoration:underline;
+}
+a:visited{
+	color: #FF7F24;
+}
+
+/* Navigation*/
+nav {
+	float: right;
+}
+nav{
+	background-color:#6495ED;
+	padding: 0 0.7em;
+	white-space: nowrap;
+}
+nav ul{
+	margin: 0;
+	padding: 0;
+}
+nav ul li{
+	list-style-type:none;
+	display: inline-block;
+	padding: 0.2em 0;	
+}
+nav ul li a:visited {
+	color:#FF7F24;
+}
+nav ul li a:hover{
+	text-decoration: underline;
+}
+
+/*Sign up  button*/
+a.signup_button{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+	width: 190px;
+	background:#6495ED;
+	font-size: 150%;
+	font-weight: bold;
+	padding: 20px;
+}
+/*Round corners*/
+.round{
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px; 
+	border-radius:	10px;
+}
+
+
+
+
+

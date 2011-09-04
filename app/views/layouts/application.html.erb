@@ -8,14 +8,15 @@
     <%= csrf_meta_tag %>
     <%= stylesheet_link_tag 'blueprint/screen', :media=>'screen'%>
     <%= stylesheet_link_tag 'bluepring/print', :media=>'print'%>
-  <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]--> 
+  <!--[if lt IE 8]> <%= stylesheet_link_tag 'blueprint/ie' %> <![endif]--> 
    <%= stylesheet_link_tag 'custom', :media => 'screen' %>
   </head>
 
 <body>
 	<div class="container">
 	 <header>
-		 <%= image_tag("iJobs.png", :alt => "iJobs", :class => "round") %>
+	<!-- <%= image_tag("iJobs.001.png", :alt => "iJobs",:width =>"250",:height=>"100", :class => "round") %>-->	 
+	  <h1> iJobs </h1>
 	 <nav class="round">
 		<ul>
 			<li><%= link_to "Home",'#'%></li>
