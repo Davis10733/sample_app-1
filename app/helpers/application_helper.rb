@@ -12,7 +12,7 @@ module ApplicationHelper
   end
 
   def logo
-     image_tag("iJobs.001.png", :alt => "iJobs",:width =>"250",:height=>"100", :class => "round")
+     image_tag("logo.png", :alt => "iJobs",:width =>"250",:height=>"90", :class => "round")
   end
 
 
