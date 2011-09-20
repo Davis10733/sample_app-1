@@ -13,7 +13,7 @@ class User < ActiveRecord::Base
                        :confirmation => true, 
                        :length => { :within => 6..40 }
                        
-                       
+  has_many :microposts, :dependent => :destroy         
                        
   before_save :encrypt_password
   
