@@ -1,5 +1,5 @@
+task :sample_data => :environment do
 require 'faker'
-
  namespace :db do 
    desc "Fill database with sample data" 
    task :populate => :environment do
@@ -25,6 +25,7 @@ require 'faker'
        end
      end
     
-    
    end
   end
+  
+end
