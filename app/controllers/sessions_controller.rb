@@ -11,8 +11,14 @@ class SessionsController < ApplicationController
         @title = "Sign in"
         render 'new'
     else
-       sign_in user
-       redirect_back_or user
+       
+          sign_in user
+          if params[:iphone?] == true
+            @current_user = current_user       
+            render :json => @current_user
+          else
+            redirect_back_or user
+          end
     end
   end
   
