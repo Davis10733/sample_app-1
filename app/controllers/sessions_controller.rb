@@ -21,7 +21,9 @@ class SessionsController < ApplicationController
     if user.nil?
       flash.now[:error] = "Invalid email/password combination."
     else
-      render :json => user  
+      sign_in user
+      @user = current_user
+      render :json => @user
     end
   end
 

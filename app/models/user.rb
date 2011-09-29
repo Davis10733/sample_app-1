@@ -62,6 +62,11 @@ class User < ActiveRecord::Base
       (user && user.salt == cookie_salt) ? user : nil
     end
    end
+   
+   def as_json(options={})
+     self.include_root_in_json = false
+     { :current_user => { :id => id, :email => email, :name => name, :created_at => created_at} }
+   end
   
   private
   
@@ -81,7 +86,6 @@ class User < ActiveRecord::Base
     def secure_hash(string)
      Digest::SHA2.hexdigest(string)
     end
-    
 end
 
 
