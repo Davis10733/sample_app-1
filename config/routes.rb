@@ -17,6 +17,7 @@ SampleApp::Application.routes.draw do
   match '/signup',   :to => 'users#new'
   match '/signin',   :to => 'sessions#new' 
   match '/signout',  :to => 'sessions#destroy'
+  match '/iphone-signin', :to => 'sessions#create_for_iphone'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
